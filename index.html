@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nomina.css">
+  <title>Pagina Nominas</title>
+</head>
+
+<body>
+  <div class="menu__bar">
+    <h1 class="logo">Nomina <span>PRO</span></h1>
+    <ul>
+      <li><a href="#">Paginas<i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown__menu">
+          <ul>
+
+            <li>
+              <a href="#"><i class="fas fa-caret-left"></i>Gestion</a>
+
+              <div class="dropdown__menu-1">
+                <ul>
+                  <li><a id="emp">Empleados</a></li>
+                  <li><a id="con">Conceptos</a></li>
+                  <li><a id="asi">Asignaciones</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#"><i class="fas fa-caret-left"></i>Tablas</a>
+
+              <div class="dropdown__menu-1">
+                <ul>
+                  <li><a id="temp">Empleados</a></li>
+                  <li><a id="tcon">Conceptos</a></li>
+                  <li><a id="tasi">Asignaciones</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <!--
+          <li><a href="#">Blog</a>
+          </li>
+          <li><a href="#">Contact us</a></li>
+        -->
+    </ul>
+  </div>
+
+  <div class="separation"></div>
+
+  <main>
+    <!--
+        <h1 class="titulo"> NominaPro</h1>
+      -->
+    <div class="datosEmpleados" id="cuadrado1">
+      <h2 class="subtitulito"> Datos del Empleado</h2>
+      <form action="" method="get" class="empleado">
+        <div class="botoncitos">
+          <label class="botones" for="codigo">Código del empleado</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="number" name="codigo" id="codigo" required> <br>
+        </div>
+        <div class="botoncitos">
+          <label class="botones" for="cargo">Cargo</label> <br>
+        </div>
+        <div class="barritas">
+          <select class="empleado" id="cargos">
+            <option value="CEO">CEO</option>
+            <option value="Jefe">Jefe</option>
+            <option value="Oficina">Oficina</option>
+            <option value="Campo">Campo</option>
+            <option value="Limpieza">Limpieza</option>
+          </select> <br>
+        </div>
+        <div class="botoncitos">
+          <label class="botones" for="nombre">Nombre</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="text" name="nombre" id="nombre" required> <br>
+        </div>
+        <div class="botoncitos">
+          <label class="botones" for="apellido">Apellido</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="text" name="apellido" id="apellido" required> <br>
+        </div>
+        <div class="botoncitos">
+          <label class="botones" for="nacimiento">Fecha de nacimiento</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="date" name="nacimiento" id="nacimiento" required> <br>
+        </div>
+        <div class="botoncitos">
+          <label class="botones" for="cedula">Cedula</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="number" minlength="7" maxlength="8" name="cedula" id="cedula" required> <br>
+        </div>
+
+        <!--
+          <input type="submit" class="botonRegistrar" id="registro_datosEmpleados" value="REGISTRAR">
+        -->
+        <a class="botonRegistrar" id="registrarEmpleados">REGISTRAR</a>
+      </form>
+    </div>
+
+    <div class="datosEmpleados" id="cuadrado2">
+      <h2 class="subtitulito">Concepto</h2>
+      <form action="" method="get" class="empleado">
+        <div class="botoncitos">
+          <label class="botones" for="codigoConcepto">Código del Concepto</label><br>
+        </div>
+        <div class="barritas">
+          <input type="number" name="codigoConcepto" id="codigoConcepto" required>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="nombreConcepto">Nombre del Concepto</label><br>
+        </div>
+        <div class="barritas">
+          <input type="text" name="nombreConcepto" id="nombreConcepto" required>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="tipoConcepto">Tipo del Concepto</label> <br>
+        </div>
+        <div class="barritas">
+          <select class="empleado" id="tipoConcepto" name="tipoConcepto">
+            <option value="0">Pago (0)</option>
+            <option value="1">Retiro (1)</option>
+          </select>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="modoConcepto">Modo del Concepto</label> <br>
+        </div>
+        <div class="barritas">
+          <select class="empleado" id="modoConcepto" name="modoConcepto">
+            <option value="0">Cantidad (0)</option>
+            <option value="1">Porcentaje (1)</option>
+          </select>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="descConcepto">Descripcion del Concepto</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="text" name="descConcepto" id="descConcepto" required>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="montoConcepto">Monto del Concepto</label> <br>
+        </div>
+        <div class="barritas">
+          <input type="number" name="montoConcepto" id="montoConcepto" required> <br>
+        </div>
+
+        <div class="barritas">
+          <a class="botonRegistrar" id="registrarConceptos">REGISTRAR</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="datosEmpleados" id="cuadrado3">
+      <h2 class="subtitulito">Asignar Concepto</h2>
+      <form action="" method="get" class="empleado">
+        <div class="botoncitos">
+          <label class="botones" for="idAsignarEmpleado">Código del Empleado</label><br>
+        </div>
+        <div class="barritas">
+          <input type="number" name="idAsignarEmpleado" id="idAsignarEmpleado" required> <br>
+        </div>
+
+        <div class="botoncitos">
+          <label class="botones" for="idAsignarConcepto">Codigo del Concepto</label> <br>
+        </div>
+
+        <div class="barritas">
+          <input type="number" name="idAsignarConcepto" id="idAsignarConcepto" required> <br>
+        </div>
+
+        <div class="barritas">
+          <a class="botonRegistrar" id="asignarConcepto">ASIGNAR C.</a>
+        </div>
+
+        <br>
+      </form>
+    </div>
+
+    <div class="tablaEmpleados" id="tablaEmpleados">
+      <h2 class="subtitulitoTablita"> Empleados Registrados</h1>
+        <table class="tablita">
+          <tr>
+            <th> Código </th>
+            <th> Nombre y Apellido </th>
+            <th> Cargo </th>
+            <th> Cédula </th>
+            <th> Fecha de nacimiento</th>
+          </tr>
+          <tr>
+           <!--        
+            <td> 0 </td>
+            <td> Naruto Uzumaki </td>
+            <td> Campo </td>
+            <td> 30437156 </td>
+            <td> 2000-10-10</td>
+           -->
+          </tr>
+          <tbody id="r1"></tbody>
+        </table>
+    </div>
+
+    <div class="tablaEmpleados" id="tablaConceptos">
+      <h2 class="subtitulitoTablita">Conceptos Guardados</h1>
+        <table class="tablita">
+          <tr>
+            <th> Código </th>
+            <th> Nombre</th>
+            <th> Tipo</th>
+            <th> Modo</th>
+            <th> Descripcion</th>
+            <th> Monto</th>
+          </tr>
+          <tr>
+                   <!--
+            <td> 0 </td>
+            <td> Sueldo</td>
+            <td> Pago </td>
+            <td> Porcentaje</td>
+            <td> Pago de Sueldo</td>
+            <td> 100 </td>
+                   -->
+          </tr>
+          <tbody id="r2"></tbody>
+        </table>
+    </div>
+
+    <div class="tablaEmpleados" id="tablaAsignados">
+      <h2 class="subtitulitoTablita">Historial de Asignacion de Conceptos</h1>
+        <table class="tablita">
+          <tr>
+            <th> Código Empleado</th>
+            <th> Código Concepto</th>
+            <th> Total Calculado</th>
+          </tr>
+          <tr>
+            <!--
+            <td>0</td>
+            <td>0</td>
+            <td>8000</td>
+            -->
+          </tr>
+          <tbody id="r3"></tbody>
+
+        </table>
+    </div>
+
+  </main>
+
+  <div class="separation"></div>
+  <script src="nomina.js"></script>
+</body>
+
+</html>
